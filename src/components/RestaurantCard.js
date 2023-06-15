@@ -1,9 +1,10 @@
-import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
-import React from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+/* eslint-disable prettier/prettier */
+import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+import React from "react";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 
-import { urlFor } from '../../sanity';
+import { urlFor } from "../../sanity";
 const RestaurantCard = ({
   id,
   imgUrl,
@@ -22,7 +23,7 @@ const RestaurantCard = ({
     <TouchableOpacity
       className="bg-white mr-3 mb-3 shadow"
       onPress={() =>
-        navigation.navigate('Restaurant', {
+        navigation.navigate("Restaurant", {
           id,
           imgUrl,
           title,
@@ -53,7 +54,12 @@ const RestaurantCard = ({
         </View>
 
         <View className="flex-row items-center space-x-1">
-          <Ionicons name="location-sharp" size={22} color="gray" opacity={0.4} />
+          <Ionicons
+            name="location-sharp"
+            size={22}
+            color="gray"
+            opacity={0.4}
+          />
           <Text className="text-xs text-gray-500"> Nearby · {address}</Text>
         </View>
       </View>

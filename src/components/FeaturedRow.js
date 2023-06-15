@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Ionicons } from '@expo/vector-icons';
 import React, { useEffect, useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
